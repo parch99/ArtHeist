@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .instructions {
+            color: whitesmoke;
+            background-color: transparent;
+            text-decoration: none;
+            position: absolute;
+            font-size: 5vh;
+            font-family: Cochin, 'Times New Roman', serif;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .story {
+            color: whitesmoke;
+            background-color: transparent;
+            text-decoration: none;
+            position: absolute;
+            font-size: 5vh;
+            font-family: Cochin, 'Times New Roman', serif;
+            font-weight: bold;
+            margin-top: 70px;
+        }
+        .play {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                color: whitesmoke;
+                background-color: transparent;
+                text-decoration: none;
+                position: absolute;
+                text-align: center;
+                font-family: Cochin, 'Times New Roman', serif;
+                font-size: 8vh;
+                font-weight: bolder;
+                margin-bottom: 20px;
+         }
+         a:hover {
+                color: rgb(255, 255, 255);
+                background-color: transparent;
+                text-shadow: 2px 2px #000000;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>ArtHeist</title>
+    <script type="text/javascript" src="/lib/gl-matrix-min.js"></script>
+    
+    <link rel="stylesheet" href="/common/style.css">
+</head>
+<body>
+    <div class="fullscreen no-touch pixelated">
+        <div id = "starting_screen" class="fff">
+            <img class="fullscreen" src="../common/images/startscreen.jpg">    
+            <a class="play" href="artheist.html">PLAY</a>
+            <a class="instructions" href="instructions.html">INSTRUCTIONS</a>
+            <a class="story" href="story.html">STORY</a>
+        </div>
+        <canvas></canvas>
+    </div>
+</body>
+</html>

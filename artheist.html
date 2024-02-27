@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ArtHeist</title>
+    <script type="text/javascript" src="/lib/gl-matrix-min.js"></script>
+    <script type="module" src="main.js"></script>
+    
+    <link rel="stylesheet" href="/common/style.css">
+</head>
+<body>
+    <div style="position: absolute; display: flex; flex-direction: column; align-items: flex-start; padding: 10px;">
+        <span id="time_left" class="time_left" style="font-size: 175%; color: whitesmoke; font-weight: bold;">Time left 2:00</span>
+        <p id="text" style="text-align: left; font-size: 175%; display: inline-block; ">
+            <span style="color: whitesmoke; font-weight: bold;">Total Value: </span>
+            <span id="total_value" style="color: whitesmoke; font-weight: bold;">$0</span><br>
+            <span style="color: whitesmoke; font-weight: bold;">Pictures taken: </span>
+            <span id="pic_stolen" style="color: whitesmoke; font-weight: bold;">0 (max 5)</span><br>
+        </p>
+        <span id="picture_value" style="display: flex; justify-content: center; align-items: center; font-size: 150%; color: greenyellow; height: 125%;"></span></p>
+    </div>
+
+    <div id="letter" style="display: none;">
+        <img src="/common/images/notes.png" style="size: 150px;" alt="Notes Image">
+    </div>
+
+    <div id="keypad" style="display: none;">
+        <img src="/common/images/keypad.png">
+        <input type="text" id="inputField" placeholder="Enter security code" autofocus>
+    </div>
+
+    <div id="monitor" style="display: none;">
+        <img src="/common/images/monitor.jpg" style="width: 100%;" alt="Monitor Screen">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+            <input type="text" id="terminalInput" style="margin-bottom: 10px;">
+            <br>
+        </div>
+    </div>
+
+    <div class="fullscreen no-touch pixelated">
+        <canvas></canvas>
+    </div>
+</body>
+</html>
